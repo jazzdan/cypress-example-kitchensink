@@ -13,6 +13,7 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           browser: replay-chromium
+          start: npm start
 
       # Always run this step so failed tests are uploaded
       - name: Upload replays
